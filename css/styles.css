@@ -29,9 +29,7 @@ h3{
     flex-direction: column;
 }
 
-div {
-    font-size: 25px;
-}
+
 /* LISTAS UL */
 .list__element {
     font-family: 'Niconne', cursive;
@@ -44,6 +42,7 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
 /* LISTA DEL HEADER */
+
 .header__lista{
     list-style: none;
     margin: 0 16px;
@@ -51,7 +50,24 @@ p {
     background-color: pink;
     
 }
-/* ITEM DE LOS HEADER */
+.header{
+    background-color: pink;
+    font-size: medium;
+
+}
+/* BOOTSTRAP */
+.navbar{
+    background-color: rgb(234, 139, 155);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+/* carousel */
+.altura__carousel{
+    height: 500px;
+
+}
+
+    /* ITEM DE LOS HEADER */
 .header__item {
     display: inline;
     display: cover;
