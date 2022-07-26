@@ -1,0 +1,23 @@
+{
+  "name": "29295",
+  "version": "1.0.0",
+  "description": "<h1>Monica Solari,pasteleria</h1>\r <p>Este sitio es para una pastelería creativa, y forma parte del proyecto para coder house</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadiaLavagnino/MonicaSolari-pasteleria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadiaLavagnino/MonicaSolari-pasteleria/issues"
+  },
+  "homepage": "https://github.com/NadiaLavagnino/MonicaSolari-pasteleria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
