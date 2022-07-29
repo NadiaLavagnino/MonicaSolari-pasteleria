@@ -1,401 +1,338 @@
 * {
-  margin: 0px;/* MARGEN EXTERNO */
-  padding: 0px;/* MARGEN INTERNO */
-}
+  margin: 0px;
+  /* MARGEN EXTERNO */
+  padding: 0px;
+  /* MARGEN INTERNO */ }
+
 /* TITULOS */
 .list__title {
-    color: rgb(230, 51, 81);
-    font-family: 'Montserrat', sans-serif;
-    margin: 30px;
-}
+  color: #e63351;
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px; }
+
 /* SUBTITULOS */
 .list__subtitle {
-    color: rgb(249, 106, 130);
-    font-family: 'Titan One', cursive;
-    margin: 15px;   
-}
-h3{
-    color: rgb(61, 3, 116);
-    font-style: italic;
-    text-transform: capitalize;
-    margin: 16px;
-}
+  color: #f96a82;
+  font-family: 'Titan One', cursive;
+  margin: 15px; }
+
+h3 {
+  color: #3d0374;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 16px; }
+
 /* IMAGENES */
 .fotos__cursos {
-    width: 200px;
-    padding-right: 15px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
+  width: 200px;
+  padding-right: 15px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; }
 
 div {
-    font-size: 25px;
-}
+  font-size: 25px; }
+
 /* LISTAS UL */
 .list__element {
-    font-family: 'Niconne', cursive;
-    margin: 16px;
-    
-}
+  font-family: 'Niconne', cursive;
+  margin: 16px; }
+
 p {
-    color:rgb(238, 59, 226);
-    margin: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} 
+  color: #ee3be2;
+  margin: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 /* LISTA DEL HEADER */
-.header__lista{
-    list-style: none;
-    margin: 0 16px;
-    display: inline;
-    background-color: pink;
-    
-}
+.header__lista {
+  list-style: none;
+  margin: 0 16px;
+  display: inline;
+  background-color: pink; }
+
 /* ITEM DE LOS HEADER */
 .header__item {
-    display: inline;
-    display: cover;
-    padding: 10px;
-}
+  display: inline;
+  display: cover;
+  padding: 10px; }
+
 /* LOGO DEL HEADER */
 .header__logo {
-    display: inline;
-    width: 25px;
-    height: 25px;
-    
-}
+  display: inline;
+  width: 25px;
+  height: 25px; }
+
 /* ITEM A */
-.header__item a{
-    color: rgb(230, 51, 81);
-    text-decoration: none;
-    
-}
+.header__item a {
+  color: #e63351;
+  text-decoration: none; }
+
 /* NAVEGACION */
-.header__nav{
-    display: flex;
-    justify-content: end;
-    flex-wrap: wrap;
-}
+.header__nav {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap; }
+
 /* FOTOS DE FOOTER */
-.gallery__footer{
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-    align-items: center;
-    justify-content: end;
-    flex-wrap: wrap;
+.gallery__footer {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap; }
 
-}
+label {
+  margin: 16px;
+  color: #f96a82; }
 
-label{
-    margin: 16px;
-    color: rgb(249, 106, 130);
-}
-input{
-    margin: 16px;
-    padding: auto;
-}
-ol{
-    padding: 25px;
-    font-family: 'Niconne', cursive;
-}
+input {
+  margin: 16px;
+  padding: auto; }
+
+ol {
+  padding: 25px;
+  font-family: 'Niconne', cursive; }
+
 /* FLEXBOX */
-.main__flex{
-    display: flex;
-    justify-content: center;
-}
-
+.main__flex {
+  display: flex;
+  justify-content: center; }
 
 /* GRIDS */
 /* INDEX GRID */
-.index__grid{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows:1fr 1fr 1fr ;
-    grid-template-areas: "croissant imagen-index galletitas-decoradas"
-                        "ice-pop imagen-index oreos"
-                        "tarta-frutilla imagen-index galletitas";
-    row-gap: 5px;
-    column-gap: 5px;
-    background-color: rgb(234, 127, 145);
-}
+.index__grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "croissant imagen-index galletitas-decoradas" "ice-pop imagen-index oreos" "tarta-frutilla imagen-index galletitas";
+  row-gap: 5px;
+  column-gap: 5px;
+  background-color: #ea7f91; }
 
-.croissant{
-    grid-area: croissant;
-    background-image: url("../resources/croissant.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.imagen-index{
-    grid-area: imagen-index;
-    background-image: url("../resources/imagen-index.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.galletitas-decoradas{
-    grid-area: galletitas-decoradas;
-    background-image: url("../resources/galletas-decoradas.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ice-pop{
-    grid-area: ice-pop;
-    background-image: url("../resources/ice-pop.jpeg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+.croissant {
+  grid-area: croissant;
+  background-image: url("../resources/croissant.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-}
-.oreos{
-    grid-area: oreos;
-    background-image: url("../resources/oreos.jpeg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.tarta-frutilla{
-    grid-area: tarta-frutilla;
-    background-image: url("../resources/tarta-frutilla.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.galletitas{
-    grid-area: galletitas;
-    background-image: url("../resources/galletitas.jpeg"); 
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+.imagen-index {
+  grid-area: imagen-index;
+  background-image: url("../resources/imagen-index.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.galletitas-decoradas {
+  grid-area: galletitas-decoradas;
+  background-image: url("../resources/galletas-decoradas.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.ice-pop {
+  grid-area: ice-pop;
+  background-image: url("../resources/ice-pop.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.oreos {
+  grid-area: oreos;
+  background-image: url("../resources/oreos.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.tarta-frutilla {
+  grid-area: tarta-frutilla;
+  background-image: url("../resources/tarta-frutilla.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.galletitas {
+  grid-area: galletitas;
+  background-image: url("../resources/galletitas.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /* GALERIA GRID */
 .gallery__grid {
-    display: grid;
-    margin-top: 10px;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-    grid-template-areas:"chica-cupcake macarones chica-decorando"
-                        "chica-cupcake flor chica-decorando"
-                        "decoraciones flor castillo"
-                        "decoraciones torta castillo";
-                        
-}
+  display: grid;
+  margin-top: 10px;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "chica-cupcake macarones chica-decorando" "chica-cupcake flor chica-decorando" "decoraciones flor castillo" "decoraciones torta castillo"; }
 
-.chica-decorando{
-    grid-area: chica-decorando;
-    display: flex;
-    background-image: url("../resources/chica-decorando.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: rgba(130, 11, 240, 0.749);
-    font-size: large;
-    justify-content: right;
-    align-items: flex-end;
+.chica-decorando {
+  grid-area: chica-decorando;
+  display: flex;
+  background-image: url("../resources/chica-decorando.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(130, 11, 240, 0.749);
+  font-size: large;
+  justify-content: right;
+  align-items: flex-end; }
 
-    
-}
-.chica-cupcake{
-    grid-area: chica-cupcake;
-    background-image: url("../resources/chica-cupcake.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: rgba(130, 11, 240, 0.749);
-    font-size: large;
-    justify-content: left;
-}
-.macarones{
-    grid-area: macarones;
-    background-image: url("../resources/macarones.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.chica-cupcake {
+  grid-area: chica-cupcake;
+  background-image: url("../resources/chica-cupcake.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(130, 11, 240, 0.749);
+  font-size: large;
+  justify-content: left; }
 
-    
-    
-}
+.macarones {
+  grid-area: macarones;
+  background-image: url("../resources/macarones.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-.torta{
-    grid-area: torta;
-    background-image: url("../resources/doblecake.jpg" );
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.castillo{
-    grid-area: castillo;
-    background-image: url("../resources/cake-castillo.jpg");
-    background-position: right 55%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.flor{
-    grid-area: flor;
-    background-image: url("../resources/torta-flor.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.decoraciones{
-    grid-area: decoraciones;
-    background-image: url("../resources/cake.jpg");
-    background-position: right 35%;
-    background-size: cover;
-    background-repeat: no-repeat;
+.torta {
+  grid-area: torta;
+  background-image: url("../resources/doblecake.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-}
+.castillo {
+  grid-area: castillo;
+  background-image: url("../resources/cake-castillo.jpg");
+  background-position: right 55%;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-.tarta-frutal{
-    grid-area: tarta-frutal;
-    background-image: url("../resources/tarta-frutal.jpg");
-    background-position: 35% center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+.flor {
+  grid-area: flor;
+  background-image: url("../resources/torta-flor.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.decoraciones {
+  grid-area: decoraciones;
+  background-image: url("../resources/cake.jpg");
+  background-position: right 35%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.tarta-frutal {
+  grid-area: tarta-frutal;
+  background-image: url("../resources/tarta-frutal.jpg");
+  background-position: 35% center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /* RECETAS GRID */
-.recetas__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    margin: 10px;
-}
-.pic__uno{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.pic__dos{
-    grid-column: 2/3;
-    grid-row: 1/2;
+.recetas__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  margin: 10px; }
 
-}
-.pic__tres{
-    grid-column: 3/4;
-    grid-row: 1/2;
+.pic__uno {
+  grid-column: 1/2;
+  grid-row: 1/2; }
 
-}
-.img__principal--card{
-    width:400px;
-    height: 250px;
-}
-.pic__card{
-    display: flex;
-    background-image: linear-gradient(pink, rgb(239, 135, 153));
-    flex-direction: column;
-    justify-content: center;
-    border:purple solid 2px;
-    border-radius: 10px;
-    padding: 16px;
-}
+.pic__dos {
+  grid-column: 2/3;
+  grid-row: 1/2; }
+
+.pic__tres {
+  grid-column: 3/4;
+  grid-row: 1/2; }
+
+.img__principal--card {
+  width: 400px;
+  height: 250px; }
+
+.pic__card {
+  display: flex;
+  background-image: linear-gradient(pink, #ef8799);
+  flex-direction: column;
+  justify-content: center;
+  border: purple solid 2px;
+  border-radius: 10px;
+  padding: 16px; }
+
 button:hover {
-    transform: scale(1.25, 1.25);
-    transition: all 2s;
-}
-button{
-    border-radius: 5px;
-    background: linear-gradient(pink, rgb(246, 162, 176));
-}
+  transform: scale(1.25, 1.25);
+  transition: all 2s; }
 
-.keyframe{
-    animation-name: loop;
-    animation-iteration-count: initial;
-    animation-timing-function: ease-in-out;
-    animation-duration: 10s;
-    animation-delay: 3s;
-}
+button {
+  border-radius: 5px;
+  background: linear-gradient(pink, #f6a2b0); }
+
+.keyframe {
+  animation-name: loop;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-delay: 3s; }
+
 @keyframes loop {
-    0%{
-        width: 100px;
-    }
-    25%{
-        width: 500px;
-    }
-    50%{
-        background-color: rgb(241, 131, 241);
-    }
-    100%{
-        background-color: pink;
-        width: 0px;
-    } 
-}
-
-
-
+  0% {
+    width: 100px; }
+  25% {
+    width: 500px; }
+  50% {
+    background-color: #f183f1; }
+  100% {
+    background-color: pink;
+    width: 0px; } }
 
 /* MEDIA QUERIES DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
-    .index__grid{
-        grid-template-columns:1fr;
-        grid-template-rows:auto;
-        
+  .index__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  .imagen-index {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .croissant {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .ice-pop {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .galletitas-decoradas {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .galletitas {
+    grid-column: 1/2;
+    grid-column: 5/6; }
+  .tarta-frutilla {
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  .oreos {
+    grid-column: 1/2;
+    grid-row: 7/8; }
+  .header__nav {
+    flex-direction: column; }
+  .header__lista {
+    flex-direction: column; }
+  .header__logo {
+    flex-direction: column; }
+  .list__title {
+    flex-direction: column; }
+  /* SUBTITULOS */
+  .list__subtitle {
+    flex-direction: column;
+    width: 10px; }
+  h3 {
+    flex-direction: column; } }
 
-        }
-        .imagen-index{
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-        .croissant{
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-        .ice-pop{
-            grid-column: 1/2;
-            grid-row: 3/4;
-        }
-        .galletitas-decoradas{
-            grid-column: 1/2;
-            grid-row: 4/5;
-        }
-        .galletitas{
-            grid-column: 1/2;
-            grid-column: 5/6;
-        }
-        .tarta-frutilla{
-            grid-column: 1/2;
-            grid-row: 6/7;
-        }
-        .oreos{
-            grid-column: 1/2;
-            grid-row: 7/8;
-        }
-
-        .header__nav{
-            flex-direction: column;
-            }
-        .header__lista{
-            flex-direction: column;
-        }
-        .header__logo{
-            flex-direction: column;
-            
-        }
-        .list__title {
-            flex-direction: column;
-            
-        }
-        /* SUBTITULOS */
-        .list__subtitle {
-            flex-direction: column;
-            width: 10px;
-            
-        }
-        h3{
-            flex-direction: column;
-        }
-
-        
-    }
 /* MEDIA QUERIES DE TABLET */
-@media (min-width: 576px) and (max-width: 992px){
-    
-}
