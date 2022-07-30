@@ -4,7 +4,9 @@
   "description": "<h1>Monica Solari,pasteleria</h1>\r <p>Este sitio es para una pastelería creativa, y forma parte del proyecto para coder house</p>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
