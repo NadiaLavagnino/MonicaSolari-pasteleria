@@ -7,6 +7,7 @@
     <meta name="keywords"  content="PASTELERIA,CONTACTOS,CELULAR, MAIL, TORTAS,CUMPLEAÑOS,FIESTAS,EVENTOS,">
     <meta name="description" content="">
     <link rel="shortcut icon" href="../resources/logo.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -22,51 +23,70 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="../resources/logo.ico.png" alt="logo" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/cursos y seminarios.html">Cursos y Seminarios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/recetas.html">Recetas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
-                </li>
-                </ul>
-        
-            </div>
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cursos y seminarios.html">CURSOS Y SEMINARIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/recetas.html">RECETAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                    </ul>
             </div>
         </nav>
-
     </header>
     <main>
-        <h1 class="list__title">Contacto</h1>
-        <form" method="post">
-        <div>
-           <label>Nombre y Apellido</label>
-           <input>
-        </div>
-        <div>
-           <label>Email</label>
-           <input>
-        </div>
-        <div>
-           <label>Deja tu consulta</label>
-           <textarea></textarea>
-        </div>
-        <input type="submit" value="enviar">
-        <input type="reset" value="borrar">
-        <input type="button" value="derp">
-    
-    </form>
-
+        <section class="cotainer-fluid">
+            <article class="row mb-3">
+            <div class="col">
+                <form>
+                    <label for="exampleFormControlInput1" class="form-label">NOMBRE Y APELLIDO</label>
+                    <input type="nombre y apellido" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">DEJA TUS COMENTARIOS</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary boton" type="button">ENVIAR</button>
+                    <button class="btn btn-primary boton" type="button">BORRAR</button>
+                </div>
+                </form>
+            </div>
+            <div class="col">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="img-fluid carousel-item active md-6">
+                            <img src="../resources/pasteleria-dos.jpg" class="h-50 d-block w-100" alt="...">
+                        </div>
+                        <div class="img-fluid carousel-item active md-6">
+                            <img src="../resources/pasteleria-uno.jpg" class="h-50 d-block w-100" alt="...">
+                        </div>
+                        <div class="img-fluid carousel-item active md-6">
+                            <img src="../resources/pasteleria-tres.jpg" class="h-50 d-block w-100" alt="...">
+                        </div>
+                </div>
+            </div>
+            </article>
+        </section>
 
     </main>
     <footer>

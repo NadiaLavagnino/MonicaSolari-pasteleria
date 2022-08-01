@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<h1>Monica Solari,pasteleria</h1>\r <p>Este sitio es para una pastelería creativa, y forma parte del proyecto para coder house</p>",
   "main": "index.js",
+<<<<<<< HEAD
   "dependencies": {
     "abbrev": "^1.1.1",
     "agent-base": "^6.0.2",
@@ -237,11 +238,16 @@
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
   },
+=======
+>>>>>>> cambio-responsive
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+<<<<<<< HEAD
 
+=======
+>>>>>>> cambio-responsive
   },
   "repository": {
     "type": "git",
@@ -252,5 +258,13 @@
   "bugs": {
     "url": "https://github.com/NadiaLavagnino/MonicaSolari-pasteleria/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/NadiaLavagnino/MonicaSolari-pasteleria#readme"
+=======
+  "homepage": "https://github.com/NadiaLavagnino/MonicaSolari-pasteleria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+>>>>>>> cambio-responsive
 }

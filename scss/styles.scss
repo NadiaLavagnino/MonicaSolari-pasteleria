@@ -127,6 +127,57 @@ ol{
     row-gap: 5px;
     column-gap: 5px;
     background-color: rgb(234, 127, 145);
+    
+.croissant{
+    grid-area: croissant;
+    background-image: url("../resources/croissant.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imagen-index{
+    grid-area: imagen-index;
+    background-image: url("../resources/imagen-index.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galletitas-decoradas{
+    grid-area: galletitas-decoradas;
+    background-image: url("../resources/galletas-decoradas.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ice-pop{
+    grid-area: ice-pop;
+    background-image: url("../resources/ice-pop.jpeg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.oreos{
+    grid-area: oreos;
+    background-image: url("../resources/oreos.jpeg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tarta-frutilla{
+    grid-area: tarta-frutilla;
+    background-image: url("../resources/tarta-frutilla.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galletitas{
+    grid-area: galletitas;
+    background-image: url("../resources/galletitas.jpeg"); 
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 }
 
 .croissant{
