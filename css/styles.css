@@ -1,21 +1,8 @@
-<<<<<<< HEAD
 * {
   margin: 0px;
   /* MARGEN EXTERNO */
   padding: 0px;
   /* MARGEN INTERNO */ }
-
-/* TITULOS */
-.list__title {
-  color: #e63351;
-  font-family: 'Montserrat', sans-serif;
-  margin: 30px; }
-
-/* SUBTITULOS */
-.list__subtitle {
-  color: #f96a82;
-  font-family: 'Titan One', cursive;
-  margin: 15px; }
 
 h3 {
   color: #3d0374;
@@ -23,65 +10,12 @@ h3 {
   text-transform: capitalize;
   margin: 16px; }
 
-/* IMAGENES */
-.fotos__cursos {
-  width: 200px;
-  padding-right: 15px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column; }
-
-div {
-  font-size: 25px; }
-
-/* LISTAS UL */
-.list__element {
-  font-family: 'Niconne', cursive;
-  margin: 16px; }
-
 p {
   color: #ee3be2;
   margin: 5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-/* LISTA DEL HEADER */
-.header__lista {
-  list-style: none;
-  margin: 0 16px;
-  display: inline;
-  background-color: pink; }
-
-/* ITEM DE LOS HEADER */
-.header__item {
-  display: inline;
-  display: cover;
-  padding: 10px; }
-
-/* LOGO DEL HEADER */
-.header__logo {
-  display: inline;
-  width: 25px;
-  height: 25px; }
-
-/* ITEM A */
-.header__item a {
-  color: #e63351;
-  text-decoration: none; }
-
-/* NAVEGACION */
-.header__nav {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: end;
-  flex-wrap: wrap; }
-
-/* FOTOS DE FOOTER */
-.gallery__footer {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
-  align-items: center;
-  justify-content: end;
-  flex-wrap: wrap; }
+  justify-content: center; }
 
 label {
   margin: 16px;
@@ -95,10 +29,44 @@ ol {
   padding: 25px;
   font-family: 'Niconne', cursive; }
 
+/* TITULOS */
+.list__title {
+  color: #e63351;
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px; }
+  .list__title__subtitle {
+    color: #f96a82;
+    font-family: 'Titan One', cursive;
+    margin: 15px; }
+    .list__title__subtitle__element {
+      font-family: 'Niconne', cursive;
+      margin: 16px; }
+
+/* IMAGENES */
+.fotos__cursos {
+  width: 200px;
+  padding-right: 15px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; }
+
+/* FOTOS DE FOOTER */
+.gallery__footer {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap; }
+
 /* FLEXBOX */
 .main__flex {
   display: flex;
   justify-content: center; }
+
+/* BOOTSTRAP */
+.header {
+  background-color: pink !important; }
 
 /* GRIDS */
 /* INDEX GRID */
@@ -112,6 +80,48 @@ ol {
   row-gap: 5px;
   column-gap: 5px;
   background-color: #ea7f91; }
+  .index__grid .croissant {
+    grid-area: croissant;
+    background-image: url("../resources/croissant.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .index__grid .imagen-index {
+    grid-area: imagen-index;
+    background-image: url("../resources/imagen-index.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .index__grid .galletitas-decoradas {
+    grid-area: galletitas-decoradas;
+    background-image: url("../resources/galletas-decoradas.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .index__grid .ice-pop {
+    grid-area: ice-pop;
+    background-image: url("../resources/ice-pop.jpeg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .index__grid .oreos {
+    grid-area: oreos;
+    background-image: url("../resources/oreos.jpeg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .index__grid .tarta-frutilla {
+    grid-area: tarta-frutilla;
+    background-image: url("../resources/tarta-frutilla.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .index__grid .galletitas {
+    grid-area: galletitas;
+    background-image: url("../resources/galletitas.jpeg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .croissant {
   grid-area: croissant;
@@ -269,13 +279,12 @@ ol {
   border-radius: 10px;
   padding: 16px; }
 
-button:hover {
-  transform: scale(1.25, 1.25);
-  transition: all 2s; }
-
 button {
   border-radius: 5px;
   background: linear-gradient(pink, #f6a2b0); }
+  button:hover {
+    transform: scale(1.25, 1.25);
+    transition: all 2s; }
 
 .keyframe {
   animation-name: loop;
@@ -299,7 +308,9 @@ button {
 @media (min-width: 320px) and (max-width: 575px) {
   .index__grid {
     grid-template-columns: 1fr;
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    grid-template-areas: "imagen-index" "ice-pop" "galletitas" "oreos" "tarta-frutilla";
+    row-gap: 5px; }
   .imagen-index {
     grid-column: 1/2;
     grid-row: 1/2; }
@@ -323,19 +334,35 @@ button {
     grid-row: 7/8; }
   .header__nav {
     flex-direction: column; }
-  .header__lista {
-    flex-direction: column; }
-  .header__logo {
-    flex-direction: column; }
+    .header__nav__lista {
+      flex-direction: column; }
+    .header__nav__logo {
+      flex-direction: column; }
   .list__title {
     flex-direction: column; }
-  /* SUBTITULOS */
-  .list__subtitle {
-    flex-direction: column;
-    width: 10px; }
+    .list__title__subtitle {
+      flex-direction: column;
+      width: 10px; }
   h3 {
     flex-direction: column; } }
 
-/* MEDIA QUERIES DE TABLET */
-=======
->>>>>>> cambio-responsive
+@media (min-width: 320px) and (max-width: 575px) {
+  .recetas__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5px; }
+  .pic__uno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 300px; }
+  .pic__dos {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 300px; }
+  .pic__tres {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 300px; }
+  .img__principal--card {
+    width: 260px;
+    height: 250px; } }
