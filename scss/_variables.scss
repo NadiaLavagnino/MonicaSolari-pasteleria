@@ -1,0 +1,23 @@
+/* LETRAS */
+$font-principal:'Montserrat', sans-serif;
+$font-secundario:'Titan One', cursive;
+$font-element: 'Niconne', cursive;
+$font-h3:italic;
+
+/* COLORES */
+$color-principal:pink;
+$color-title: rgb(230, 51, 81);
+$color-subtitle:rgb(249, 106, 130);
+$color-h3:rgb(61, 3, 116);
+$color-p:rgb(238, 59, 226);
+$color-nav:rgb(220, 21, 54);
+
+/* TAMAÑO */
+
+$total-ancho: 100vw;
+$total-alto: 100vh;
+
+/* TAMAÑO LETRA */
+$contenido: 1rem;
+$title: $contenido * 3;
+$subtitle:$contenido * 2;

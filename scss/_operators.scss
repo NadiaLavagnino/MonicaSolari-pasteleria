@@ -1,0 +1,26 @@
+/* CONDICIONAL IF */
+
+/* MAPS */
+$redes:(
+    facebook:blue,
+    instagram:rgb(229, 24, 229),
+    whatsapp:rgba(22, 242, 85, 0.839)
+);
+@each $name, $color in $redes {
+    .color-#{$name} {
+            background-color: #{$color};
+    }
+    
+}
+
+/* EXTEND */
+.background-derecha {
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background-centrado{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
