@@ -145,7 +145,7 @@ ol{
                         "decoraciones torta castillo";
     
         .chica-decorando{
-            @extend .background-center;
+            @extend .background-derecha;
             grid-area: chica-decorando;
             display: flex;
             background-image: url("../resources/chica-decorando.jpg");

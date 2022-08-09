@@ -3,15 +3,13 @@
     .index__grid{
         display: grid;
         grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:auto;
         grid-template-areas: "imagen-index"
                             "croissant"
                             "ice-pop"
                             "galletitas"
                             "tarta-frutilla";
-        row-gap: 5px;
-
-
+        
         .imagen-index{
             grid-column: 1/2;
             grid-row: 1/3;
