@@ -3,12 +3,16 @@
 /* COLORES */
 /* TAMAÑO */
 /* TAMAÑO LETRA */
+footer {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .gallery__footer {
   width: 25px;
   height: 25px;
   margin: 10px;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap; }
 
 /* CONDICIONAL IF */
@@ -23,12 +27,12 @@
   background-color: rgba(22, 242, 85, 0.839); }
 
 /* EXTEND */
-.background-derecha, .index__grid .croissant, .index__grid .imagen-index, .index__grid .galletitas-decoradas, .index__grid .ice-pop, .index__grid .oreos, .index__grid .tarta-frutilla, .index__grid .galletitas {
+.background-derecha, .index__grid .croissant, .index__grid .imagen-index, .index__grid .galletitas-decoradas, .index__grid .ice-pop, .index__grid .oreos, .index__grid .tarta-frutilla, .index__grid .galletitas, .gallery__grid .chica-decorando, .gallery__grid .flor {
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat; }
 
-.background-centrado {
+.background-center, .gallery__grid .chica-cupcake, .gallery__grid .macarones {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -36,10 +40,10 @@
 /* MEDIA QUERIES DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
   .index__grid {
-    display: grid;
+    height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "imagen-index" "croissant" "ice-pop" "galletitas" "tarta-frutilla";
+    grid-template-rows: auto;
+    column-gap: 5px;
     row-gap: 5px; }
     .index__grid .imagen-index {
       grid-column: 1/2;
@@ -134,12 +138,12 @@ ol {
 .list__title {
   color: #e63351;
   font-family: "Montserrat", sans-serif;
-  margin: 30px; }
+  margin: 50px; }
 
 .list__subtitle {
   color: #f96a82;
   font-family: "Titan One", cursive;
-  margin: 15px; }
+  margin: 10px; }
 
 .list__element {
   font-family: "Niconne", cursive;
@@ -202,19 +206,16 @@ ol {
 /* GALERIA GRID */
 .gallery__grid {
   display: grid;
-  margin-top: 10px;
-  width: 100vw;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "chica-cupcake macarones chica-decorando" "chica-cupcake flor chica-decorando" "decoraciones flor castillo" "decoraciones torta castillo"; }
+  grid-template-areas: "chica-cupcake macarones chica-decorando" "chica-cupcake flor chica-decorando" "decoraciones flor castillo" "decoraciones torta castillo";
+  row-gap: 3px;
+  padding: 3px; }
   .gallery__grid .chica-decorando {
     grid-area: chica-decorando;
     display: flex;
     background-image: url("../resources/chica-decorando.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #3d0374;
     font-size: large;
     justify-content: right;
@@ -222,18 +223,12 @@ ol {
   .gallery__grid .chica-cupcake {
     grid-area: chica-cupcake;
     background-image: url("../resources/chica-cupcake.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #3d0374;
     font-size: large;
     justify-content: left; }
   .gallery__grid .macarones {
     grid-area: macarones;
-    background-image: url("../resources/macarones.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/macarones.jpg"); }
   .gallery__grid .torta {
     grid-area: torta;
     background-image: url("../resources/doblecake.jpg");
@@ -248,10 +243,7 @@ ol {
     background-repeat: no-repeat; }
   .gallery__grid .flor {
     grid-area: flor;
-    background-image: url("../resources/torta-flor.jpg");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../resources/torta-flor.jpg"); }
   .gallery__grid .decoraciones {
     grid-area: decoraciones;
     background-image: url("../resources/cake.jpg");
@@ -291,6 +283,13 @@ ol {
       grid-row: 1/2; }
     .recetas__grid .pic__card .img__principal--card {
       height: 250px; }
+
+.carousel-inner {
+  margin-block-end: 5px;
+  padding-right: 5px; }
+
+.btn {
+  margin: 10px; }
 
 button {
   border-radius: 5px;

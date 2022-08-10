@@ -43,12 +43,12 @@ ol{
 .list__title {
     color: $color-title;
     font-family: $font-principal;
-    margin: 30px;
+    margin: 50px;
 } 
 .list__subtitle {
     color: $color-subtitle;
     font-family: $font-secundario;
-    margin: 15px;
+    margin: 10px;
 }   
 .list__element {
         font-family:$font-element;
@@ -134,8 +134,6 @@ ol{
   /* GALERIA GRID */
 .gallery__grid {
     display: grid;
-    margin-top: 10px;
-    width: $total-ancho;
     height: $total-alto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr;
@@ -143,7 +141,8 @@ ol{
                         "chica-cupcake flor chica-decorando"
                         "decoraciones flor castillo"
                         "decoraciones torta castillo";
-    
+    row-gap: 3px; 
+    padding: 3px;                  
         .chica-decorando{
             @extend .background-derecha;
             grid-area: chica-decorando;
@@ -238,8 +237,14 @@ ol{
             }
         }
 }
+.carousel-inner{
+    margin-block-end: 5px;
+    padding-right: 5px;
+}
 
-
+.btn{
+    margin: 10px;
+}
 
 button{
     border-radius: 5px;
