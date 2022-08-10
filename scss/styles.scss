@@ -1,7 +1,7 @@
 @import "variables";
 @import "footer";
 @import "operators";
-@import "mediaqueries";
+
 
 
 
@@ -238,8 +238,8 @@ ol{
         }
 }
 .carousel-inner{
-    margin-block-end: 5px;
-    padding-right: 5px;
+    width: 600px;
+    height: 500px;
 }
 
 .btn{
@@ -277,3 +277,4 @@ button{
     } 
 }
 
+@import "mediaqueries";
