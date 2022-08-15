@@ -64,6 +64,7 @@ ol{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    
 }
 
   /* FLEXBOX */
@@ -77,7 +78,7 @@ ol{
     background-color: pink !important;
 }
 .nav-link{
-    color:$color-nav
+    color:$color-nav;
 }
 
   /* GRIDS */

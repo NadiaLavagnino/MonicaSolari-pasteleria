@@ -71,7 +71,7 @@ ol {
 /* TITULOS */
 .list__title {
   color: #e63351;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dancing Script", cursive;
   margin: 50px; }
 
 .list__subtitle {
@@ -260,6 +260,7 @@ button {
     row-gap: 2px;
     padding: 3px; }
   .imagen-index {
+    align-items: center;
     grid-area: imagen-index;
     grid-column: 1/2;
     grid-row: 1/3; }
@@ -275,27 +276,38 @@ button {
     grid-area: tarta-frutilla;
     grid-column: 1/2;
     grid-row: 5/6; }
-  .header__nav {
-    flex-direction: column; }
-    .header__nav__lista {
+  .main__flex {
+    display: inline;
+    background-position: center; }
+  .ocultar {
+    display: none; }
+  .header {
+    flex-direction: column;
+    background-position: center; }
+    .header__lista {
       flex-direction: column; }
-    .header__nav__logo {
+    .header__logo {
       flex-direction: column; }
-    .header__nav .carousel-inner {
+    .header .img__fuid {
       width: 200px;
-      height: 150px; }
-    .header__nav .list__title {
+      height: 150px;
+      padding: 5px;
+      margin: 5px; }
+    .header .list__title {
       flex-direction: column;
       font-size: small; }
-      .header__nav .list__title__subtitle {
+      .header .list__title__subtitle {
         flex-direction: column;
         font-size: small; }
-      .header__nav .list__title h3 {
+      .header .list__title .none {
+        display: none; }
+      .header .list__title h3 {
         flex-direction: column; }
-      .header__nav .list__title .list__element {
-        font-size: small; }
-      .header__nav .list__title .ocultar {
-        justify-content: flex-end; } }
+      .header .list__title .list__element {
+        font-size: small;
+        background-position: center; }
+      .header .list__title .col {
+        flex: auto; } }
 
 @media (min-width: 320px) and (max-width: 575px) and (min-width: 320px) and (max-width: 575px) {
   .recetas__grid {
@@ -319,7 +331,35 @@ button {
     width: 300px; }
   .img__principal--card {
     width: 260px;
-    height: 200px; } }
+    height: 200px; }
+  .gallery__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "chica-cupcake" "chica-decorando" "torta" "castillo" "decoraciones";
+    row-gap: 3px;
+    padding: 3px; }
+    .gallery__grid .chica-decorando {
+      grid-area: chica-decorando;
+      grid-column: 1/2;
+      grid-row: 1/3;
+      justify-items: auto; }
+    .gallery__grid .chica-cupcake {
+      grid-area: chica-cupckake;
+      grid-column: 1/2;
+      grid-row: 3/5;
+      background-position: center; }
+    .gallery__grid .torta {
+      grid-area: torta;
+      grid-column: 1/2;
+      grid-row: 5/6; }
+    .gallery__grid .castillo {
+      grid-area: castillo;
+      grid-column: 1/2;
+      grid-row: 6/7; }
+    .gallery__grid .decoraciones {
+      grid-area: decoraciones;
+      grid-column: 1/2;
+      grid-row: 7/8; } }
 
 @media (min-width: 320px) and (max-width: 575px) {
   /* MEDIAQUERIE TABLET */ }
@@ -327,7 +367,7 @@ button {
 @media (min-width: 320px) and (max-width: 575px) and (min-width: 576px) and (max-width: 992px) {
   .index__grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "imagen-index croissant oreos" "imagen-index ice-pop galletitas" "imagen index tarta-frutilla galletitas-decoradas"; }
   .imagen-index {
     grid-area: imagen-index;
@@ -363,6 +403,7 @@ button {
 
 @media (min-width: 320px) and (max-width: 575px) and (min-width: 576px) and (max-width: 992px) {
   .recetas__grid {
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 5px; }
   .pic__uno {
